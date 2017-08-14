@@ -1,5 +1,7 @@
 # Introduction
 
+PwnedPasswordsDLL is probably the simplest DLL you've ever seen. It consists of two functions - the built-in DLL boilerplate in Visual Studio, and a function to check passwords against the HaveIBeenPwned database of breached passwords.
+
 Check out https://jacksonvd.com/checking-for-breached-passwords-with-active-directory for more information on the background of the tool.
 
 # Compiling the Code (Visual Studio)
@@ -26,8 +28,7 @@ Please note that you will need to follow these instructions for all Domain Contr
 
 2. The DLL name needs to be added to the multi-string “Notification Packages” subkey under HKLM\System\CurrentControlSet\Control\LSA - note that you only need to add the name of the DLL, not including the file extension.
 
-3. FIREWALL SETTINGS
 
-4. To ensure that the DLL works alongside your Group Policy password filtering settings,  ensure that the Passwords must meet complexity requirements policy setting is enabled through your Domain Controllers GPO.
+3. To ensure that the DLL works alongside your Group Policy password filtering settings,  ensure that the Passwords must meet complexity requirements policy setting is enabled through your Domain Controllers GPO.
 
-5. Reboot the PC. Any password change request should now be filtered through the HaveIBeenPwned API.
+4. Reboot the PC. Any password change request should now be filtered through the HaveIBeenPwned API.
