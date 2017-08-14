@@ -26,7 +26,7 @@ Please note that you will need to follow these instructions for all Domain Contr
 
 2. The DLL name needs to be added to the multi-string “Notification Packages” subkey under HKLM\System\CurrentControlSet\Control\LSA - note that you only need to add the name of the DLL, not including the file extension.
 
-3. FIREWALL SETTINGS
+3. FIREWALL SETTINGS
 
 4. To ensure that the DLL works alongside your Group Policy password filtering settings,  ensure that the Passwords must meet complexity requirements policy setting is enabled through your Domain Controllers GPO.
 
