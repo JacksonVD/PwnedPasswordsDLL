@@ -2,7 +2,7 @@
 
 PwnedPasswordsDLL is probably the simplest DLL you've ever seen. It consists of two functions - the built-in DLL boilerplate in Visual Studio, and a function to check passwords against the HaveIBeenPwned database of breached passwords.
 
-Check out https://jacksonvd.com/checking-for-breached-passwords-with-active-directory for more information on the background of the tool.
+Check out https://jacksonvd.com/checking-for-breached-passwords-in-active-directory/ for more information on the background of the tool.
 
 # Compiling the Code (Visual Studio)
 
