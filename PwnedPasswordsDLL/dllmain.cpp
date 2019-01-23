@@ -8,7 +8,7 @@
 * Content Author:  Jackson Van Dyke
 * Contact: jacksonvd.com
 * Date Written:    17-08-17
-* Last Modified: 17-12-18
+* Last Modified: 23-01-19
 */
 
 // Various includes - includes sha.h, filters.h and hex.h from Crypto++
@@ -179,8 +179,6 @@ extern "C" __declspec(dllexport) BOOLEAN __stdcall PasswordFilter(PUNICODE_STRIN
 		ii++;
 	} while (passwordNotFound && ii < _countof(files));
 
-	// Clear the password from memory
-	SecureZeroMemory(password, sizeof(password)); 
 	// Return passwordNotFound Boolean to LSA
 	return passwordNotFound;
 }
